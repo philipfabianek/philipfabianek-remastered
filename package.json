@@ -1,0 +1,22 @@
+{
+  "name": "philipfabianek-remastered",
+  "version": "1.0.0",
+  "description": "2019 version of PhilipFabianek.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": "git@github.com:philipfabianek/philipfabianek-remastered.git",
+  "author": "Philip Fabianek <fabianekphilip@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+
+  }
+}
