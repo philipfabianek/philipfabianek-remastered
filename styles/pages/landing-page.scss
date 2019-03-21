@@ -1,0 +1,188 @@
+$topPercentage: 50%;
+$atSmallTopPercentage: 47.5%;
+$atMediumTopPercentage: 45%;
+$atLargeTopPercentage: 47.5%;
+
+.landing-page {
+  & {
+    background-image: url('/static/images/skyline--1920x1080.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__rectangle {
+    border-top: 1px solid #222;
+    border-left: 1px solid #222;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    top: $topPercentage;
+    transform: translate(-50%, -270px) rotate(45deg);
+    width: 80px;
+
+    @include atSmall {
+      top: $atSmallTopPercentage;
+    }
+
+    @include atMedium {
+      top: $atMediumTopPercentage;
+    }
+
+    @include atLarge {
+      top: $atLargeTopPercentage;
+    }
+  }
+
+  &__circles {
+    & {
+      height: 150px;
+      left: 50%;
+      position: absolute;
+      top: $topPercentage;
+      transform: translate(-50%, -230px);
+      width: 784px;
+
+      @include atSmall {
+        top: $atSmallTopPercentage;
+      }
+
+      @include atMedium {
+        top: $atMediumTopPercentage;
+      }
+
+      @include atLarge {
+        top: $atLargeTopPercentage;
+      }
+    }
+
+    &:before, &:after {
+      border-top: 1px solid #222;
+      border-right: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-radius: 150px;
+      content: "";
+      height: 300px;
+      position: absolute;
+      top: 0;
+      width: 300px;
+    }
+
+    &:before {
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      right: 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__text {
+    left: 50%;
+    position: absolute;
+    top: $topPercentage;
+    transform: translate(-50%, -160px);
+
+    @include atSmall {
+      top: $atSmallTopPercentage;
+    }
+
+    @include atMedium {
+      top: $atMediumTopPercentage;
+    }
+
+    @include atLarge {
+      top: $atLargeTopPercentage;
+    }
+  }
+
+  &__title {
+    color: #222;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: #222;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+
+  &__button {
+    & {
+      background-color: transparent;
+      border: 1px solid #222;
+      border-radius: 20px;
+      color: #222;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      left: 50%;
+      letter-spacing: .5px;
+      outline: 0;
+      overflow: visible;
+      padding: 12px 120px;
+      position: absolute;
+      top: $topPercentage;
+      transform: translate(-50%, -50%);
+      transition: background-color .3s ease, color .3s ease, padding .3s ease;
+
+      @include atSmall {
+        top: $atSmallTopPercentage;
+      }
+
+      @include atMedium {
+        top: $atMediumTopPercentage;
+      }
+
+      @include atLarge {
+        top: $atLargeTopPercentage;
+      }
+
+      &:hover, &:active {
+        background-color: #222;
+        color: #eee;
+        padding: 12px 140px;
+      }
+    }
+
+    &:before, &:after {
+      border-bottom: 1px solid #222;
+      content: "";
+      height: 1px;
+      position: absolute;
+      top: $topPercentage;
+      transform: translateY(-50%);
+      width: 200px;
+
+      @include atSmall {
+        top: $atSmallTopPercentage;
+      }
+
+      @include atMedium {
+        top: $atMediumTopPercentage;
+      }
+
+      @include atLarge {
+        top: $atLargeTopPercentage;
+      }
+    }
+
+    &:before {
+      right: 350px;
+    }
+
+    &:after {
+      left: 350px;
+    }
+  }
+}
