@@ -21,7 +21,7 @@ $atLargeTopPercentage: 47.5%;
     left: 50%;
     position: absolute;
     top: $topPercentage;
-    transform: translate(-50%, -270px) rotate(45deg);
+    transform: translate(-50%, -270px) rotate(45deg) skew(-10deg, -10deg);
     transition: transform .3s ease;
     width: 70px;
 
@@ -44,9 +44,9 @@ $atLargeTopPercentage: 47.5%;
       left: 50%;
       position: absolute;
       top: $topPercentage;
-      transform: translate(-50%, -230px);
+      transform: translate(-50%, -190px);
       transition: transform .3s ease;
-      width: 784px;
+      width: 980px;
 
       @include atSmall {
         top: $atSmallTopPercentage;
@@ -74,15 +74,19 @@ $atLargeTopPercentage: 47.5%;
     }
 
     &:before {
+      // background-color: red;
       left: 0;
       transform: rotate(-45deg);
-      transition: left .3s ease;
+      transform-origin: 50% 0;
+      transition: left .3s ease, transform .3s ease;
     }
 
     &:after {
+      // background-color: red;
       right: 0;
       transform: rotate(45deg);
-      transition: right .3s ease;
+      transform-origin: 50% 0;
+      transition: right .3s ease, transform .3s ease;
     }
   }
 

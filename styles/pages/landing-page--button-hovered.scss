@@ -6,15 +6,17 @@
 
     &__circles {
       & {
-        transform: translate(-50%, -220px);
+        transform: translate(-50%, -175px);
       }
 
       &:before {
         left: 20px;
+        transform: rotate(-45deg) scale(.98);
       }
 
       &:after {
         right: 20px;
+        transform: rotate(45deg) scale(.98);
       }
     }
 
