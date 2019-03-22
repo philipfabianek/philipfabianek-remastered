@@ -12,9 +12,9 @@ const HeadComponent = (props) => (
     <meta key="msapplication-TileColor" name="msapplication-TileColor" content="#da532c" />
     <meta key="theme-color" name="theme-color" content="#ffffff" />
 
-    <meta key="charset" charset="UTF-8" />
+    <meta key="charset" charSet="UTF-8" />
     <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta key="http-equiv" http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta key="http-equiv" httpEquiv="X-UA-Compatible" content="ie=edge" />
 
     {/* Raleway */}<link href="//fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin,latin-ext" rel="stylesheet" />
     {/* Roboto */}<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,600&subset=latin,latin-ext" rel="stylesheet" />

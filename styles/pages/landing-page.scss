@@ -17,12 +17,13 @@ $atLargeTopPercentage: 47.5%;
   &__rectangle {
     border-top: 1px solid #222;
     border-left: 1px solid #222;
-    height: 80px;
+    height: 70px;
     left: 50%;
     position: absolute;
     top: $topPercentage;
     transform: translate(-50%, -270px) rotate(45deg);
-    width: 80px;
+    transition: transform .3s ease;
+    width: 70px;
 
     @include atSmall {
       top: $atSmallTopPercentage;
@@ -44,6 +45,7 @@ $atLargeTopPercentage: 47.5%;
       position: absolute;
       top: $topPercentage;
       transform: translate(-50%, -230px);
+      transition: transform .3s ease;
       width: 784px;
 
       @include atSmall {
@@ -74,11 +76,13 @@ $atLargeTopPercentage: 47.5%;
     &:before {
       left: 0;
       transform: rotate(-45deg);
+      transition: left .3s ease;
     }
 
     &:after {
       right: 0;
       transform: rotate(45deg);
+      transition: right .3s ease;
     }
   }
 
@@ -146,12 +150,6 @@ $atLargeTopPercentage: 47.5%;
 
       @include atLarge {
         top: $atLargeTopPercentage;
-      }
-
-      &:hover, &:active {
-        background-color: #222;
-        color: #eee;
-        padding: 12px 140px;
       }
     }
 

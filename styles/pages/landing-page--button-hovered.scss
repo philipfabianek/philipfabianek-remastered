@@ -1,0 +1,27 @@
+.landing-page--button-hovered {
+  .landing-page {
+    &__rectangle {
+      transform: translate(-50%, -255px) rotate(45deg);
+    }
+
+    &__circles {
+      & {
+        transform: translate(-50%, -220px);
+      }
+
+      &:before {
+        left: 20px;
+      }
+
+      &:after {
+        right: 20px;
+      }
+    }
+
+    &__button {
+      background-color: #222;
+      color: #eee;
+      padding: 12px 140px;
+    }
+  }
+}

@@ -1,3 +1,6 @@
+// React
+import { useState } from 'react';
+
 // Next.js
 import Link from 'next/link'
 
@@ -8,6 +11,16 @@ import { Head } from "../components/reusable";
 import "../styles"
 
 const IndexPage = () => {
+  const onButtonMouseOver = () => {
+    setLandingPageClassName('landing-page--button-hovered');
+  };
+
+  const onButtonMouseOut = () => {
+    setLandingPageClassName('');
+  };
+
+  const [landingPageClassName, setLandingPageClassName] = useState('');
+
   return (
     <div>
       <Head
@@ -15,7 +28,7 @@ const IndexPage = () => {
         description="Full-Stack Web Developer that produces high-end websites and applications that focus on simplicity and the best possible user experience."
       />
 
-      <div className="landing-page">
+      <div className={`landing-page ${landingPageClassName}`}>
         <div className="landing-page__initial-content">
           <div className="landing-page__rectangle"></div>
 
@@ -31,7 +44,11 @@ const IndexPage = () => {
             </h2>
           </div>
 
-          <button className="landing-page__button">
+          <button
+            className="landing-page__button"
+            onMouseOver={onButtonMouseOver}
+            onMouseOut={onButtonMouseOut}
+          >
             Explore
           </button>
         </div>
