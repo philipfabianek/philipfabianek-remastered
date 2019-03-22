@@ -12,14 +12,28 @@ import "../styles"
 
 const IndexPage = () => {
   const onButtonMouseOver = () => {
+    if (isButtonClicked) {
+      return;
+    }
+
     setLandingPageClassName('landing-page--button-hovered');
   };
 
   const onButtonMouseOut = () => {
+    if (isButtonClicked) {
+      return;
+    }
+    
     setLandingPageClassName('');
   };
 
+  const onButtonClick = () => {
+    setIsButtonClicked(true);
+    setLandingPageClassName('landing-page--button-hovered landing-page--button-clicked');
+  };
+
   const [landingPageClassName, setLandingPageClassName] = useState('');
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   return (
     <div>
@@ -48,6 +62,7 @@ const IndexPage = () => {
             className="landing-page__button"
             onMouseOver={onButtonMouseOver}
             onMouseOut={onButtonMouseOut}
+            onClick={onButtonClick}
           >
             Explore
           </button>
