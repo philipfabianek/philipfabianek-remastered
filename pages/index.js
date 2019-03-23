@@ -13,8 +13,18 @@ import { isIEorEdge } from "../utils/detectBrowser";
 // Styles
 import "../styles";
 
+// Constants
 const HOVERED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-hovered' : 'landing-page--button-hovered';
 const CLICKED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-clicked' : 'landing-page--button-clicked';
+const SELECTION_OPENED_CLASSNAME = 'landing-page__selection--opened';
+
+// Selection config
+const selectionOptions = [
+  { text: "About me", href: "/about" },
+  { text: "Features", href: "/features" },
+  { text: "Portfolio", href: "/portfolio" },
+  { text: "Contact", href: "/contact" },
+];
 
 const IndexPage = () => {
   const onButtonMouseOver = () => {
@@ -34,12 +44,18 @@ const IndexPage = () => {
   };
 
   const onButtonClick = () => {
+    if (isButtonClicked) {
+      return;
+    }
+
     setIsButtonClicked(true);
     setLandingPageClassName(`${HOVERED_CLASSNAME} ${CLICKED_CLASSNAME}`);
+    setTimeout(() => setSelectionClassName(SELECTION_OPENED_CLASSNAME), 3000);
   };
 
   const [landingPageClassName, setLandingPageClassName] = useState('');
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [selectionClassName, setSelectionClassName] = useState('');
 
   return (
     <div>
@@ -74,12 +90,20 @@ const IndexPage = () => {
           </button>
         </div>
 
-        <div className="landing-page__selection">
-
+        <div className={`landing-page__selection ${selectionClassName}`}>
+          {
+            selectionOptions.map(({ href, text }, i) => (
+              <Link href={href} key={href}>
+                <div className={`landing-page__selection__option landing-page__selection__option--${i + 1}`}>
+                  {text}
+                </div>
+              </Link>
+            ))
+          }
         </div>
       </div>
     </div>
   );
 };
 
-export default IndexPage
+export default IndexPage;
