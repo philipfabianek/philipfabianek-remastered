@@ -7,8 +7,14 @@ import Link from 'next/link'
 // Head
 import { Head } from "../components/reusable";
 
+// utils
+import { isIEorEdge } from "../utils/detectBrowser";
+
 // Styles
-import "../styles"
+import "../styles";
+
+const HOVERED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-hovered' : 'landing-page--button-hovered';
+const CLICKED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-clicked' : 'landing-page--button-clicked';
 
 const IndexPage = () => {
   const onButtonMouseOver = () => {
@@ -16,20 +22,20 @@ const IndexPage = () => {
       return;
     }
 
-    setLandingPageClassName('landing-page--button-hovered');
+    setLandingPageClassName(`${HOVERED_CLASSNAME}`);
   };
 
   const onButtonMouseOut = () => {
     if (isButtonClicked) {
       return;
     }
-    
+
     setLandingPageClassName('');
   };
 
   const onButtonClick = () => {
     setIsButtonClicked(true);
-    setLandingPageClassName('landing-page--button-hovered landing-page--button-clicked');
+    setLandingPageClassName(`${HOVERED_CLASSNAME} ${CLICKED_CLASSNAME}`);
   };
 
   const [landingPageClassName, setLandingPageClassName] = useState('');

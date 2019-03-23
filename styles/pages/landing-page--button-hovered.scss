@@ -27,3 +27,13 @@
     }
   }
 }
+
+.landing-page--button-ie-hovered {
+  .landing-page {
+    &__button {
+      background-color: #222;
+      color: #eee;
+      padding: 12px 140px;
+    }
+  }
+}
