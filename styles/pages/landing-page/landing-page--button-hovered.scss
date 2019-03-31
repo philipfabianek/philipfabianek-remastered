@@ -1,7 +1,13 @@
 .landing-page--button-hovered {
   .landing-page {
     &__rectangle {
-      transform: translate(-50%, -255px) rotate(45deg);
+      @include atMedium {
+        transform: translate(-50%, -240px) rotate(45deg);
+      }
+
+      @include atLarge {
+        transform: translate(-50%, -255px) rotate(45deg);
+      }
     }
 
     &__circles {
@@ -23,7 +29,19 @@
     &__button {
       background-color: #222;
       color: #eee;
-      padding: 12px 140px;
+      padding: 10px 90px;
+
+      @include atSmall {
+        padding: 11px 115px;
+      }
+
+      @include atMedium {
+        padding: 11px 125px;
+      }
+
+      @include atLarge {
+        padding: 11px 140px;
+      }
     }
   }
 }
@@ -33,7 +51,19 @@
     &__button {
       background-color: #222;
       color: #eee;
-      padding: 12px 140px;
+      padding: 10px 90px;
+
+      @include atSmall {
+        padding: 11px 115px;
+      }
+
+      @include atMedium {
+        padding: 11px 125px;
+      }
+
+      @include atLarge {
+        padding: 11px 140px;
+      }
     }
   }
 }

@@ -1,190 +1,263 @@
-$topPercentage: 55%;
-$atSmallTopPercentage: 52.5%;
-$atMediumTopPercentage: 50%;
-$atLargeTopPercentage: 50%;
+.landing-page {
+  &__rectangle, &__circles, &__text, &__button, &__button:before, &__button:after {
+    top: 80%;
+
+    @include atMinimumHeight(250px) {
+      top: 85%;
+    }
+
+    @include atMinimumHeight(325px) {
+      top: 70%;
+    }
+
+    @include atMinimumHeight(400px) {
+      top: 65%;
+    }
+
+    @include atMinimumHeight(500px) {
+      top: 55%;
+    }
+
+    @include atMinimumHeight(600px) {
+      top: 45%;
+    }
+  }
+}
 
 .landing-page {
   & {
-    background-image: url('/static/images/skyline--1920x1080.jpg');
+    background-image: url('/static/images/skyline--800x1600.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 400px;
     text-align: center;
     width: 100%;
+
+    @include atSmall {
+      background-image: url('/static/images/skyline--1920x1080.jpg');
+    }
+
+    @include atVeryLarge {
+      background-image: url('/static/images/skyline--2560x1440.jpg');
+    }
+
+    @include atMoreThan2560 {
+      background-image: url('/static/images/skyline--3840x2160.jpg');
+    }
   }
 
   &__rectangle {
     border-top: 1px solid #222;
     border-left: 1px solid #222;
-    height: 70px;
+    height: 55px;
     left: 50%;
     position: absolute;
-    top: $topPercentage;
-    transform: translate(-50%, -270px) rotate(45deg) skew(-10deg, -10deg);
+    transform: translate(-50%, -225px) rotate(45deg) skew(-10deg, -10deg);
     transition: transform .3s ease;
-    width: 70px;
+    width: 55px;
 
     @include atSmall {
-      top: $atSmallTopPercentage;
+      height: 60px;
+      transform: translate(-50%, -235px) rotate(45deg) skew(-10deg, -10deg);
+      width: 60px;
     }
 
     @include atMedium {
-      top: $atMediumTopPercentage;
+      height: 70px;
+      transform: translate(-50%, -255px) rotate(45deg) skew(-10deg, -10deg);
+      width: 70px;
     }
 
     @include atLarge {
-      top: $atLargeTopPercentage;
+      transform: translate(-50%, -270px) rotate(45deg) skew(-10deg, -10deg);
     }
   }
 
   &__circles {
     & {
-      height: 150px;
-      left: 50%;
-      position: absolute;
-      top: $topPercentage;
-      transform: translate(-50%, -190px);
-      transition: transform .3s ease;
-      width: 980px;
-
-      @include atSmall {
-        top: $atSmallTopPercentage;
-      }
+      visibility: hidden;
 
       @include atMedium {
-        top: $atMediumTopPercentage;
+        height: 120px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -180px);
+        transition: transform .3s ease;
+        visibility: visible;
+        width: 860px;
       }
 
       @include atLarge {
-        top: $atLargeTopPercentage;
+        height: 150px;
+        transform: translate(-50%, -190px);
+        width: 980px;
       }
     }
 
     &:before, &:after {
-      border-top: 1px solid #222;
-      border-right: 1px solid transparent;
-      border-left: 1px solid transparent;
-      border-radius: 150px;
-      content: "";
-      height: 300px;
-      position: absolute;
-      top: 0;
-      width: 300px;
+      @include atMedium {
+        border-top: 1px solid #222;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-radius: 120px;
+        content: "";
+        height: 240px;
+        position: absolute;
+        top: 0;
+        width: 240px;
+      }
+
+      @include atLarge {
+        border-radius: 150px;
+        height: 300px;
+        width: 300px;
+      }
     }
 
     &:before {
-      // background-color: red;
-      left: 0;
-      transform: rotate(-45deg);
-      transform-origin: 50% 0;
-      transition: left .3s ease, transform .3s ease;
+      @include atMedium {
+        left: 0;
+        transform: rotate(-45deg);
+        transform-origin: 50% 0;
+        transition: left .3s ease, transform .3s ease;
+      }
     }
 
     &:after {
-      // background-color: red;
-      right: 0;
-      transform: rotate(45deg);
-      transform-origin: 50% 0;
-      transition: right .3s ease, transform .3s ease;
+      @include atMedium {
+        right: 0;
+        transform: rotate(45deg);
+        transform-origin: 50% 0;
+        transition: right .3s ease, transform .3s ease;
+      }
     }
   }
 
   &__text {
     left: 50%;
     position: absolute;
-    top: $topPercentage;
     transform: translate(-50%, -160px);
-
-    @include atSmall {
-      top: $atSmallTopPercentage;
-    }
-
-    @include atMedium {
-      top: $atMediumTopPercentage;
-    }
-
-    @include atLarge {
-      top: $atLargeTopPercentage;
-    }
   }
 
   &__title {
     color: #222;
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+
+    @include atSmaller {
+      font-size: 35px;
+    }
+
+    @include atSmall {
+      font-size: 42px;
+      letter-spacing: 1.5px;
+    }
+
+    @include atMedium {
+      font-size: 46px;
+    }
+
+    @include atLarge {
+      font-size: 51px;
+    }
   }
 
   &__subtitle {
     color: #222;
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-top: 10px;
+
+    @include atSmaller {
+      font-size: 21px;
+    }
+
+    @include atSmall {
+      font-size: 22px;
+    }
+
+    @include atLarge {
+      font-size: 24px;
+    }
   }
 
   &__button {
     & {
-      background-color: transparent;
+      background-color: rgba(#eee, .7);
       border: 1px solid #222;
       border-radius: 20px;
       color: #222;
+      cursor: pointer;
       font-family: "Raleway", sans-serif;
-      font-size: 20px;
+      font-size: 18px;
       left: 50%;
       letter-spacing: .5px;
       outline: 0;
       overflow: visible;
-      padding: 12px 120px;
+      padding: 10px 70px;
       position: absolute;
-      top: $topPercentage;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50px);
       transition: background-color .3s ease, color .3s ease, padding .3s ease;
 
+      * {
+        cursor: pointer;
+      }
+
       @include atSmall {
-        top: $atSmallTopPercentage;
+        font-size: 20px;
+        padding: 11px 95px;
+        transform: translate(-50%, -35px);
       }
 
       @include atMedium {
-        top: $atMediumTopPercentage;
+        padding: 11px 105px;
+        transform: translate(-50%, -25px);
       }
 
       @include atLarge {
-        top: $atLargeTopPercentage;
+        padding: 11px 120px;
+        transform: translate(-50%, -15px);
       }
     }
 
     &:before, &:after {
-      border-bottom: 1px solid #222;
       content: "";
-      height: 1px;
-      position: absolute;
-      top: $topPercentage;
-      transform: translateY(-50%);
-      width: 170px;
-
-      @include atSmall {
-        top: $atSmallTopPercentage;
-      }
+      visibility: hidden;
 
       @include atMedium {
-        top: $atMediumTopPercentage;
+        border-bottom: 1px solid #222;
+        height: 1px;
+        position: absolute;
+        transform: translateY(-50%);
+        visibility: visible;
+        width: 150px;
       }
 
       @include atLarge {
-        top: $atLargeTopPercentage;
+        width: 170px;
       }
     }
 
     &:before {
-      right: 350px;
+      right: 315px;
+
+      @include atLarge {
+        right: 350px;
+      }
     }
 
     &:after {
-      left: 350px;
+      left: 315px;
+
+      @include atLarge {
+        left: 350px;
+      }
     }
   }
 }

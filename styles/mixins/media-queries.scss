@@ -1,35 +1,59 @@
+@mixin atMinimumHeight($min-height) {
+  @media all and (min-height: $min-height) {
+    @content;
+  }
+}
+
+@mixin atMinimumWidth($min-width) {
+  @media all and ($min-width: $min-width) {
+    @content;
+  }
+}
+
+@mixin atSmaller {
+  @media all and (min-width: 420px) {
+    @content;
+  }
+}
+
 @mixin atSmall {
-    @media all and (min-width: 550px) {
-        @content;
-    }
+  @media all and (min-width: 550px) {
+    @content;
+  }
 }
 
 @mixin atMedium {
-    @media all and (min-width: 800px) {
-        @content;
-    }
+  @media all and (min-width: 800px) {
+    @content;
+  }
 }
 
 @mixin atLarge {
-    @media all and (min-width: 1200px) {
-        @content;
-    }
+  @media all and (min-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin atVeryLarge {
-    @media all and (min-width: 1560px) {
-        @content;
-    }
+  @media all and (min-width: 1560px) {
+    @content;
+  }
 }
 
 @mixin at1920 {
-    @media all and (min-width: 1820px) {
-        @content;
-    }
+  @media all and (min-width: 1920px) {
+    @content;
+  }
 }
 
 @mixin atMoreThan1920 {
-    @media all and (min-width: 1921px) {
-        @content;
-    }
+  @media all and (min-width: 1921px) {
+    @content;
+  }
+}
+
+@mixin atMoreThan2560 {
+  @media all and (min-width: 2561px) {
+    @content;
+  }
 }

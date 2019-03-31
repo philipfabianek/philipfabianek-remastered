@@ -50,7 +50,7 @@ const IndexPage = () => {
 
     setIsButtonClicked(true);
     setLandingPageClassName(`${HOVERED_CLASSNAME} ${CLICKED_CLASSNAME}`);
-    setTimeout(() => setSelectionClassName(SELECTION_OPENED_CLASSNAME), 3000);
+    setTimeout(() => setSelectionClassName(SELECTION_OPENED_CLASSNAME), isIEorEdge() ? 2200 : 3000);
   };
 
   const [landingPageClassName, setLandingPageClassName] = useState('');
