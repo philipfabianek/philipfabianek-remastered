@@ -1,0 +1,21 @@
+.reveal__container {
+  & {
+    opacity: 0;
+    transition: opacity .5s ease, transform .5s ease, visibility .5s ease;
+    visibility: hidden;
+  }
+
+  &--slow {
+    transition-duration: 8s;
+  }
+
+  &--transformed {
+    transform: translateY(-8px);
+  }
+
+  &--revealed {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}

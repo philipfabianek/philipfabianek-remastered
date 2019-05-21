@@ -1,0 +1,48 @@
+.language-switch {
+  & {
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    height: 19px;
+    outline: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 80px;
+  }
+
+  * {
+    cursor: pointer;
+  }
+
+  &__language {
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+  }
+
+  &__selected-cover {
+    & {
+      background-color: #000;
+      height: 19px;
+      opacity: .4;
+      position: absolute;
+      top: 0;
+      transition: left .3s ease;
+      width: 50%;
+      z-index: 2;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      left: 50%;
+    }
+  }
+}

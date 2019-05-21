@@ -4,8 +4,16 @@
 // mixins
 @import "./mixins/media-queries";
 
+// custom components
+@import "./components/language-switch";
+@import "./components/reveal";
+
 // pages
+@import "./pages/page";
+
 @import "./pages/landing-page/landing-page";
 @import "./pages/landing-page/landing-page--button-hovered";
 @import "./pages/landing-page/landing-page--button-clicked";
 @import "./pages/landing-page/landing-page__selection";
+
+@import "./pages/about/about-page";
