@@ -40,19 +40,28 @@ const Page = props => {
         description={headDescription}
       />
 
-      {
-        !hideLanguageSwitch &&
-        <Reveal type='slow' delay={4000}>
-          <LanguageSwitch visible={true} />
-        </Reveal>
-      }
-
       <div className={`page ${pageClassName}`}>
         <h1 className={`page__title ${titleCN}`}>{pageTitle}</h1>
+
+        {
+          !hideLanguageSwitch &&
+          <Reveal type='slow' delay={4000}>
+            <LanguageSwitch visible={true} />
+          </Reveal>
+        }
 
         <div className="page__content">
           {children}
         </div>
+
+        <Reveal delay={4000}>
+          <div className="page__bottom-navigation">
+            <Link href="/about">ABOUT</Link>
+            <Link href="/features">FEATURES</Link>
+            <Link href="/portfolio">PORTFOLIO</Link>
+            <Link href="/contact">CONTACT</Link>
+          </div>
+        </Reveal>
       </div>
     </div>
   );

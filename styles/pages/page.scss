@@ -1,7 +1,6 @@
 .page {
   & {
     background-color: #111;
-    min-height: 100vh;
     padding-bottom: 80px;
     width: 100%;
   }
@@ -28,6 +27,7 @@
 
   &__content {
     color: #fff;
+    min-height: 100vh;
     margin: 0 auto;
     padding-top: 160px;
     width: 90%;
@@ -37,7 +37,33 @@
   &__paragraph {
     & {
       font-size: 18px;
-      line-height: 135%;
+      line-height: 145%;
+    }
+  }
+
+  &__bottom-navigation {
+    & {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 80px;
+    }
+
+    a {
+      & {
+        color: #fff;
+        font-family: "Raleway", arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0 12px;
+        text-transform: uppercase;
+        transition: color .4s ease;
+      }
+
+      &:hover, &:focus, &:active {
+        color: #ddd;
+      }
     }
   }
 }
