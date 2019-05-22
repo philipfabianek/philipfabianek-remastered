@@ -26,7 +26,7 @@ const selectionOptions = [
   { text: "Contact", href: "/contact" },
 ];
 
-const IndexPage = () => {
+export default () => {
   const onButtonMouseOver = () => {
     if (isButtonClicked) {
       return;
@@ -105,5 +105,3 @@ const IndexPage = () => {
     </div>
   );
 };
-
-export default IndexPage;

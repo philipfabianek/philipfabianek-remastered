@@ -1,7 +1,7 @@
 import Head from "next/head";
 import PropTypes from 'prop-types';
 
-const HeadComponent = (props) => (
+const HeadComponent = props => (
   <Head>
     <link key="apple-touch-icon" rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
     <link key="icon-32x32" rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />

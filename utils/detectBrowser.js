@@ -1,4 +1,5 @@
 // https://stackoverflow.com/a/21712356
+// detects Internet Explorer or Microsoft Edge
 export const isIEorEdge = () => {
   if (!global.document) {
     return;

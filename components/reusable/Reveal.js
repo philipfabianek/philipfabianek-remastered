@@ -7,7 +7,7 @@ const CONTAINER_TRANSFORMED_CN = 'reveal__container--transformed';
 const CONTAINER_SLOW_CN = 'reveal__container--slow';
 const CONTAINER_REVEALED_CN = 'reveal__container--revealed';
 
-export const Reveal = ({ delay = 1500, type = 'default', children }) => {
+const Reveal = ({ delay = 1500, type = 'default', children }) => {
   const [containerTransitionCN, setContainerTransitionCN] = useState('');
 
   useEffect(() => {
@@ -43,3 +43,5 @@ Reveal.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+export default Reveal;

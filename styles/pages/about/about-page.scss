@@ -2,39 +2,4 @@
   & {
 
   }
-
-  &__title {
-    & {
-      color: #fff;
-      font-size: 50px;
-      font-weight: 300;
-      letter-spacing: .5px;
-      position: absolute;
-      text-align: center;
-      top: 50%;
-      transform: scale(2) translateY(-50%);
-      transition: top 1s ease, transform 1s ease;
-      width: 100%;
-    }
-
-    &--transition {
-      top: 50px;
-      transform: scale(1) translateY(0);
-    }
-  }
-
-  &__content {
-    color: #fff;
-    margin: 0 auto;
-    padding-top: 160px;
-    width: 90%;
-    max-width: 1000px;
-  }
-
-  &__paragraph {
-    & {
-      font-size: 18px;
-      line-height: 135%;
-    }
-  }
 }

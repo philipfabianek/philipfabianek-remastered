@@ -1,25 +1,27 @@
-// Next.js
-import Link from 'next/link'
+// Reusable components
+import { Page, Reveal } from "../components/reusable";
 
-// Head
-import { Head } from "../components/reusable";
-
-// Styles
-import "../styles";
-
-const PortfolioPage = () => {
+export default () => {
   return (
-    <div>
-      <Head
-        title="Portfolio | Philip Fabianek - Web Developer"
-        description="View my portfolio."
-      />
+    <Page
+      title="Portfolio"
+      headProps={{
+        title: "Portfolio | Philip Fabianek - Web Developer",
+        description: "View my portfolio.",
+      }}
+      className="portfolio-page"
+    >
+      <Reveal type='slide' delay={4000}>
+        <p className="page__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
 
-      <div className="portfolio-page">
-        <h1>Portfolio</h1>
-      </div>
-    </div>
+        <br />
+
+        <p className="page__paragraph">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </Reveal>
+    </Page>
   );
 };
-
-export default PortfolioPage;
