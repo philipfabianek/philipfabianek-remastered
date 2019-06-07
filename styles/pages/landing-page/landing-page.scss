@@ -1,21 +1,9 @@
 .landing-page {
   &__rectangle, &__circles, &__text, &__button, &__button:before, &__button:after {
-    top: 80%;
-
-    @include atMinimumHeight(250px) {
-      top: 85%;
-    }
-
-    @include atMinimumHeight(325px) {
-      top: 70%;
-    }
-
-    @include atMinimumHeight(400px) {
-      top: 65%;
-    }
+    top: 70%;
 
     @include atMinimumHeight(500px) {
-      top: 55%;
+      top: 57.5%;
     }
 
     @include atMinimumHeight(600px) {
@@ -32,6 +20,7 @@
     background-size: cover;
     height: 100vh;
     min-height: 400px;
+    position: relative;
     text-align: center;
     width: 100%;
 
