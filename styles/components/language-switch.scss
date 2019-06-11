@@ -1,12 +1,12 @@
 .language-switch {
   & {
     background-color: #fff;
-    border: none;
+    border: 1px solid #111;
     display: flex;
     flex-direction: row;
     height: 19px;
     outline: none;
-    position: absolute;
+    position: fixed;
     right: 30px;
     top: 30px;
     width: 80px;
@@ -28,7 +28,7 @@
   &__selected-cover {
     & {
       background-color: #000;
-      height: 19px;
+      height: 17px;
       opacity: .4;
       position: absolute;
       top: 0;

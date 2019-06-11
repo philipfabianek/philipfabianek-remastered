@@ -6,6 +6,9 @@ const CONTAINER_DEFAULT_CN = 'reveal__container';
 const CONTAINER_TRANSFORMED_CN = 'reveal__container--transformed';
 const CONTAINER_SLOW_CN = 'reveal__container--slow';
 const CONTAINER_REVEALED_CN = 'reveal__container--revealed';
+// making use of this because setting the transform when not needed
+// can ruin some of the functionality of the page
+const CONTAINER_TRANSFORM_REVEALED_CN = 'reveal__container--transform-revealed';
 
 const Reveal = ({ delay = 1500, type = 'default', children }) => {
   const [containerTransitionCN, setContainerTransitionCN] = useState('');
@@ -13,7 +16,12 @@ const Reveal = ({ delay = 1500, type = 'default', children }) => {
   useEffect(() => {
     if (containerTransitionCN.indexOf(CONTAINER_REVEALED_CN) === -1) {
       setTimeout(() => {
-        setContainerTransitionCN(CONTAINER_REVEALED_CN);
+        let CNToSet = CONTAINER_REVEALED_CN;
+        if (type === 'slide') {
+          CNToSet += (" " + CONTAINER_TRANSFORM_REVEALED_CN);
+        }
+
+        setContainerTransitionCN(CNToSet);
       }, delay);
     }
   });

@@ -13,6 +13,12 @@ import "../../styles";
 
 // Constants
 const TRANSITION_TITLE_CN = 'page__title--transition';
+const BOTTOM_NAVIGATION_LINKS = [
+  { href: '/about', text: 'ABOUT', linkTitle: 'Learn more about me and my life philosophy' },
+  { href: '/features', text: 'FEATURES', linkTitle: 'Explore the specific features of my projects, my practises and approach' },
+  { href: '/portfolio', text: 'PORTFOLIO', linkTitle: 'Learn more about my past work and see some of the finished projects' },
+  { href: '/contact', text: 'CONTACT', linkTitle: 'Contact me' },
+];
 
 const Page = props => {
   const [titleCN, setTitleCN] = useState('');
@@ -45,7 +51,7 @@ const Page = props => {
 
         {
           !hideLanguageSwitch &&
-          <Reveal type='slow' delay={4000}>
+          <Reveal type='slow' delay={0}>
             <LanguageSwitch visible={true} />
           </Reveal>
         }
@@ -56,10 +62,11 @@ const Page = props => {
 
         <Reveal delay={4000}>
           <div className="page__bottom-navigation">
-            <Link href="/about">ABOUT</Link>
-            <Link href="/features">FEATURES</Link>
-            <Link href="/portfolio">PORTFOLIO</Link>
-            <Link href="/contact">CONTACT</Link>
+            {
+              BOTTOM_NAVIGATION_LINKS.map(({ href, text, linkTitle = '' }) => (
+                <Link href={href} key={href}><a title={linkTitle}>{text}</a></Link>
+              ))
+            }
           </div>
         </Reveal>
       </div>

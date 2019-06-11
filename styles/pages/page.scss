@@ -8,7 +8,7 @@
   &__title {
     & {
       color: #fff;
-      font-size: 50px;
+      font-size: 32px;
       font-weight: 300;
       letter-spacing: .5px;
       position: absolute;
@@ -17,6 +17,14 @@
       transform: scale(2) translateY(-50%);
       transition: top 1s ease, transform 1s ease;
       width: 100%;
+
+      @include atSmall {
+        font-size: 40px;
+      }
+
+      @include atMedium {
+        font-size: 50px;
+      }
     }
 
     &--transition {
@@ -29,15 +37,14 @@
     color: #fff;
     min-height: 100vh;
     margin: 0 auto;
-    padding-top: 160px;
-    width: 90%;
-    max-width: 1000px;
-  }
+    padding-top: 120px;
 
-  &__paragraph {
-    & {
-      font-size: 18px;
-      line-height: 145%;
+    @include atSmall {
+      padding-top: 140px;
+    }
+
+    @include atMedium {
+      padding-top: 160px;
     }
   }
 

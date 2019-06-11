@@ -1,0 +1,30 @@
+.page-space {
+  & {
+    height: 19px;
+    width: 100%;
+  }
+
+  &--at-small {
+    display: none;
+
+    @include atSmall {
+      display: block;
+    }
+  }
+
+  &--at-medium {
+    display: none;
+
+    @include atMedium {
+      display: block;
+    }
+  }
+
+  &--at-large {
+    display: none;
+
+    @include atLarge {
+      display: block;
+    }
+  }
+}

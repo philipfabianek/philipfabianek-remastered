@@ -1,0 +1,32 @@
+.paragraph {
+  & {
+    color: #111;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 155%;
+    text-align: justify;
+
+    @include atSmall {
+      font-size: 18px;
+    }
+
+    @include atMedium {
+      font-size: 21px;
+    }
+  }
+
+  &--center {
+    @include atMedium {
+      text-align: center;
+    }
+  }
+
+  &--light {
+    color: #fff;
+    font-weight: 300;
+
+    @include atMedium {
+      letter-spacing: .5px;
+    }
+  }
+}

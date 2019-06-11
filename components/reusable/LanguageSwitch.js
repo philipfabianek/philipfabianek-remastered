@@ -2,7 +2,11 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const LanguageSwitch = () => {
+const LanguageSwitch = props => {
+  if (!props.visible) {
+    return null;
+  }
+  
   const [selectedLanguage, setSelectedLanguage] = useState(0);
   const coverPosition = !selectedLanguage ? "left" : "right";
 
