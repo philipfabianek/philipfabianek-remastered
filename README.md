@@ -27,3 +27,17 @@ The structure inside the `styles` folder is also quite simple,
 ## Config files
 
 The `.gitignore`, `next.config.js`, `now.json` and `package.json` config files are all very straightforward, you won't need to ever edit the `postcss.config.js` file.
+
+## Scripts
+
+* Development
+
+```
+yarn dev
+```
+
+* Build
+
+```
+yarn build
+```
