@@ -5,11 +5,14 @@ import PropTypes from 'prop-types';
 // Next.js
 import Link from 'next/link'
 
-// Reusable components
-import { Head, LanguageSwitch, Reveal } from "./";
+// Page components
+import { Head, LanguageSwitch } from './';
+
+// Custom components
+import { Reveal } from '../transitions';
 
 // Styles
-import "../../styles";
+import '../../styles';
 
 // Constants
 const TRANSITION_TITLE_CN = 'page__title--transition';

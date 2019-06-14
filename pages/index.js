@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link'
 
 // Head
-import { Head } from "../components/reusable";
+import { Head } from "../components";
 
 // utils
 import { isIEorEdge } from "../utils/detectBrowser";

@@ -1,12 +1,12 @@
-// Reusable components
+// Custom components
 import {
   Page, Wrapper, PageSpace,
   Reveal, RevealOnScroll,
   Paragraph, Moto,
   SquareTransition,
-} from "../components/reusable";
+} from '../components';
 
-export default () => {
+const About = () => {
   return (
     <Page
       title="About me"
@@ -104,3 +104,5 @@ export default () => {
     </Page>
   );
 };
+
+export default About;

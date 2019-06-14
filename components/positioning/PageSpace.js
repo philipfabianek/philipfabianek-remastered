@@ -1,7 +1,7 @@
 // React
 import PropTypes from 'prop-types';
 
-// atX doesn't mean the total number of spaces atX,
+// atX prop doesn't mean the total number of spaces atX,
 // but the number of spaces added at atX
 const PageSpace = ({ base = 1, atSmall = 0, atMedium = 0, atLarge = 0 }) => {
   const spaces = [];

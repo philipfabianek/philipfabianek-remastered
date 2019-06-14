@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head';
 import PropTypes from 'prop-types';
 
 const HeadComponent = props => (

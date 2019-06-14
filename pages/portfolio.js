@@ -1,11 +1,11 @@
-// Reusable components
+// Custom components
 import {
   Page, Wrapper,
   PageSpace, Reveal,
   Paragraph,
-} from "../components/reusable";
+} from '../components';
 
-export default () => {
+const Portfolio = () => {
   return (
     <Page
       title="Portfolio"
@@ -33,3 +33,5 @@ export default () => {
     </Page>
   );
 };
+
+export default Portfolio;

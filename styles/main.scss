@@ -5,20 +5,22 @@
 @import "./mixins/media-queries";
 
 // custom components
+@import "./components/page";
 @import "./components/language-switch";
-@import "./components/reveal";
-@import "./components/wrapper";
-@import "./components/square-transition";
-@import "./components/paragraph";
-@import "./components/moto";
+
 @import "./components/page-space";
+@import "./components/wrapper";
 
-// pages
-@import "./pages/page";
+@import "./components/moto";
+@import "./components/paragraph";
 
-@import "./pages/landing-page/landing-page";
-@import "./pages/landing-page/landing-page--button-hovered";
-@import "./pages/landing-page/landing-page--button-clicked";
-@import "./pages/landing-page/landing-page__selection";
+@import "./components/reveal";
+@import "./components/square-transition";
 
-@import "./pages/about/about-page";
+// page specific styles
+@import "./pages/index/main";
+@import "./pages/index/button-hovered";
+@import "./pages/index/button-clicked";
+@import "./pages/index/selection";
+
+@import "./pages/about/main";
