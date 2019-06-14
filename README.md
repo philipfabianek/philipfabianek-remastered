@@ -3,7 +3,7 @@
 
 ## Requirements
 
-* Only NPM and Yarn have to be installed, making use of Yarn is suggested
+Only NPM and Yarn have to be installed, making use of Yarn is suggested
 
 ## Tech stack
 

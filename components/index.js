@@ -3,23 +3,20 @@
 
 // doesn't have to exist, but makes things easier
 
-import * as pageComponents from './page';
-import * as positionComponents from './positioning';
-import * as textComponents from './text';
-import * as transitionComponents from './transitions';
-
-const thingsToExport = [
-  pageComponents,
-  positionComponents,
-  textComponents,
-  transitionComponents,
+const folderNames = [
+  'page',
+  'positioning',
+  'text',
+  'transitions',
 ];
 
 const exportObject = {};
-thingsToExport.forEach(components => {
-  for (let componentName in components) {
-    exportObject[componentName] = components[componentName];
-  }
+folderNames.forEach(folderName => {
+  const module = require(`./${folderName}`);
+
+  for (let componentName in module) {
+    exportObject[componentName] = module[componentName];
+  };
 });
 
 module.exports = exportObject;
