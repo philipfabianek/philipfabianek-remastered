@@ -2,6 +2,7 @@ import Head from "./Head";
 import Page from "./Page";
 import LanguageSwitch from "./LanguageSwitch";
 import Reveal from "./Reveal";
+import RevealOnScroll from "./RevealOnScroll";
 import PageSpace from "./PageSpace";
 import Wrapper from "./Wrapper";
 import Paragraph from "./Paragraph";
@@ -13,6 +14,7 @@ export {
   Page,
   LanguageSwitch,
   Reveal,
+  RevealOnScroll,
   PageSpace,
   Wrapper,
   Paragraph,

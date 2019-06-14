@@ -1,7 +1,7 @@
 // Reusable components
 import {
-  Page, Wrapper,
-  PageSpace, Reveal,
+  Page, Wrapper, PageSpace,
+  Reveal, RevealOnScroll,
   Paragraph, Moto,
   SquareTransition,
 } from "../components/reusable";
@@ -57,7 +57,7 @@ export default () => {
       <Wrapper light maxWidth={700}>
         <PageSpace base={3} atSmall={1} atMedium={2} />
 
-        <Reveal type='slide' delay={0}>
+        <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
             If you do too much of one of them or don't do any relaxing activities between them, you always get burned out (physically or mentally).
           </Paragraph>
@@ -97,9 +97,9 @@ export default () => {
           <Paragraph>
             I could write way more than that, but I hope that I gave you an acceptable overview of who I am. If you want to get to know me better or have something in mind, don't hesitate and contact me on any of the platforms from the 'Contact' section of this website. I am always looking forward to having a good chat or meeting a new person.
           </Paragraph>
+        </RevealOnScroll>
 
-          <PageSpace base={3} atSmall={1} atMedium={3} />
-        </Reveal>
+        <PageSpace base={3} atSmall={1} atMedium={3} />
       </Wrapper>
     </Page>
   );

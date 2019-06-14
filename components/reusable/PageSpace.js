@@ -22,7 +22,7 @@ const PageSpace = ({ base = 1, atSmall = 0, atMedium = 0, atLarge = 0 }) => {
   }
 
   return (
-    <div style={{ width: '100%' }}>
+    <div>
       {spaces}
     </div>
   );

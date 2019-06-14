@@ -1,6 +1,7 @@
 // React
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { Waypoint } from 'react-waypoint';
 
 const CONTAINER_DEFAULT_CN = 'reveal__container';
 const CONTAINER_TRANSFORMED_CN = 'reveal__container--transformed';
@@ -10,21 +11,19 @@ const CONTAINER_REVEALED_CN = 'reveal__container--revealed';
 // can ruin some of the functionality of the page
 const CONTAINER_TRANSFORM_REVEALED_CN = 'reveal__container--transform-revealed';
 
-const Reveal = ({ delay = 1500, type = 'default', children }) => {
+const RevealOnScroll = ({ offset = 0, type = 'default', children }) => {
   const [containerTransitionCN, setContainerTransitionCN] = useState('');
 
-  useEffect(() => {
+  const onEnter = () => {
     if (containerTransitionCN.indexOf(CONTAINER_REVEALED_CN) === -1) {
-      setTimeout(() => {
-        let CNToSet = CONTAINER_REVEALED_CN;
-        if (type === 'slide') {
-          CNToSet += (" " + CONTAINER_TRANSFORM_REVEALED_CN);
-        }
+      let CNToSet = CONTAINER_REVEALED_CN;
+      if (type === 'slide') {
+        CNToSet += (" " + CONTAINER_TRANSFORM_REVEALED_CN);
+      }
 
-        setContainerTransitionCN(CNToSet);
-      }, delay);
+      setContainerTransitionCN(CNToSet);
     }
-  });
+  };
 
   let containerClassName = CONTAINER_DEFAULT_CN;
 
@@ -37,19 +36,24 @@ const Reveal = ({ delay = 1500, type = 'default', children }) => {
   containerClassName += ` ${containerTransitionCN}`;
 
   return (
-    <div className={containerClassName}>
-      {children}
-    </div>
+    <Waypoint
+      onEnter={onEnter}
+      bottomOffset={offset}
+    >
+      <div className={containerClassName}>
+        {children}
+      </div>
+    </Waypoint>
   );
 };
 
-Reveal.propTypes = {
+RevealOnScroll.propTypes = {
   type: PropTypes.oneOf(['default', 'slide', 'slow']),
-  delay: PropTypes.number,
+  offset: PropTypes.number,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
 };
 
-export default Reveal;
+export default RevealOnScroll;
