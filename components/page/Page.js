@@ -54,9 +54,9 @@ const Page = props => {
 
         {
           !hideLanguageSwitch &&
-          <Reveal type='slow' delay={0}>
+          // <Reveal type='slow' delay={0}>
             <LanguageSwitch visible={true} />
-          </Reveal>
+          // </Reveal>
         }
 
         <div className="page__content">
