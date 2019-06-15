@@ -48,7 +48,7 @@ const About = () => {
             Learning, working and doing sports
           </Moto>
 
-          <PageSpace base={3} atSmall={1} atMedium={4} />
+          <PageSpace base={5} atSmall={1} atMedium={2} />
         </Reveal>
       </Wrapper>
 
