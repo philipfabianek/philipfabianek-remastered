@@ -1,21 +1,35 @@
 // React
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+
+// utils
+import { getSelectedLanguage } from "../../utils/getSelectedLanguage";
+
+const POSSIBLE_LANGUAGES = ['CZ', 'ENG'];
 
 const LanguageSwitch = props => {
   if (!props.visible) {
     return null;
   }
-  
-  const [selectedLanguage, setSelectedLanguage] = useState(0);
-  const coverPosition = !selectedLanguage ? "left" : "right";
+
+  const [languageState, setLanguageState] = useState(getSelectedLanguage());
+  const languageIndex = POSSIBLE_LANGUAGES.indexOf(languageState);
+  const coverPosition = !languageIndex ? "left" : "right";
+
+  const setSelectedLanguage = () => {
+    if (process.browser) {
+      const languageToSet = POSSIBLE_LANGUAGES[Math.abs(languageIndex - 1)];
+      localStorage.setItem('language', languageToSet);
+      setLanguageState(languageToSet);
+    }
+  };
 
   return (
     <button
       className="language-switch"
-      onClick={() => setSelectedLanguage(Math.abs(selectedLanguage - 1))}
+      onClick={setSelectedLanguage}
     >
-      <div className="language-switch__language">CZE</div>
+      <div className="language-switch__language">CZ</div>
       <div className="language-switch__language">ENG</div>
       <div className={`language-switch__selected-cover language-switch__selected-cover--${coverPosition}`}></div>
     </button>

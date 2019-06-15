@@ -52,12 +52,12 @@ const Page = props => {
       <div className={`page ${pageClassName}`}>
         <h1 className={`page__title ${titleCN}`}>{pageTitle}</h1>
 
-        {
+        {/* {
           !hideLanguageSwitch &&
-          // <Reveal type='slow' delay={0}>
+          <Reveal type='slow' delay={0}>
             <LanguageSwitch visible={true} />
-          // </Reveal>
-        }
+          </Reveal>
+        } */}
 
         <div className="page__content">
           {children}
