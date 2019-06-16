@@ -1,3 +1,6 @@
+// Next.js
+import Link from 'next/link'
+
 // Custom components
 import {
   Page, Wrapper, PageSpace,
@@ -16,7 +19,7 @@ const About = () => {
       }}
       className="about-page"
     >
-      <Wrapper maxWidth={700}>
+      <Wrapper maxWidth={700} fullHeight atTop>
         <PageSpace base={1} atMedium={2} />
 
         <Reveal type='slide' delay={4000}>
@@ -48,13 +51,13 @@ const About = () => {
             Learning, working and doing sports
           </Moto>
 
-          <PageSpace base={5} atSmall={1} atMedium={2} />
+          <PageSpace base={2} atSmall={2} atMedium={4} />
         </Reveal>
       </Wrapper>
 
       <ImageTransition type="waves" reversed />
 
-      <Wrapper light maxWidth={700}>
+      <Wrapper maxWidth={700} light>
         <PageSpace base={1} atSmall={1} atMedium={1} />
 
         <RevealOnScroll type='slide' offset={300}>
@@ -95,7 +98,7 @@ const About = () => {
           <PageSpace base={1} />
 
           <Paragraph>
-            I could write way more than that, but I hope that I gave you an acceptable overview of who I am. If you want to get to know me better or have something in mind, don't hesitate and contact me on any of the platforms from the 'Contact' section of this website. I am always looking forward to having a good chat or meeting a new person.
+            I could write way more than that, but I hope that I gave you an acceptable overview of who I am. If you want to get to know me better or have something in mind, don't hesitate and contact me on any of the platforms from the <Link href="/contact">[Contact]</Link> section of this website. I am always looking forward to having a good chat or meeting a new person.
           </Paragraph>
         </RevealOnScroll>
 

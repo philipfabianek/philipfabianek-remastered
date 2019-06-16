@@ -1,16 +1,23 @@
 // React
-import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-const ImageTransition = ({ type, reversed = false }) => {
+const ImageTransition = ({ type, reversed = false, moving = false }) => {
   let className = 'image-transition';
-
-  if (reversed) {
-    className += ' image-transition--reversed';
-  }
 
   if (type === 'waves') {
     className += ' image-transition--waves'
+  }
+
+  if (reversed) {
+    if (!moving) {
+      className += ' image-transition--reversed';
+    } else {
+      className += ' image-transition--reversed--moving';
+    }
+  }
+
+  if (moving) {
+    className += ' image-transition--moving';
   }
 
   return (
@@ -21,6 +28,7 @@ const ImageTransition = ({ type, reversed = false }) => {
 ImageTransition.propTypes = {
   type: PropTypes.oneOf(['waves']).isRequired,
   reversed: PropTypes.bool,
+  moving: PropTypes.bool,
 };
 
 export default ImageTransition;

@@ -7,6 +7,18 @@
     min-height: 100vh;
   }
 
+  &--at-top {
+    padding-top: 120px;
+
+    @include atSmall {
+      padding-top: 140px;
+    }
+
+    @include atMedium {
+      padding-top: 160px;
+    }
+  }
+
   &--light {
     background-color: #ddd;
   }

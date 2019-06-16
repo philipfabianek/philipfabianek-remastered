@@ -5,6 +5,7 @@ const Wrapper = ({
   widthPerc = 90,
   maxWidth = 1000,
   fullHeight = false,
+  atTop = false,
   light = false,
   children,
 }) => {
@@ -12,6 +13,10 @@ const Wrapper = ({
 
   if (fullHeight) {
     className += ' wrapper--full-height';
+  }
+
+  if (atTop) {
+    className += ' wrapper--at-top';
   }
 
   if (light) {
@@ -34,6 +39,7 @@ Wrapper.propTypes = {
   widthPerc: PropTypes.number,
   maxWidth: PropTypes.number,
   fullHeight: PropTypes.bool,
+  atTop: PropTypes.bool,
   light: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
