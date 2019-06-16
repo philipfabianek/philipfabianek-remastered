@@ -1,0 +1,27 @@
+.image-transition {
+  & {
+    background-repeat: repeat-x;
+    background-size: auto 150px;
+    height: 150px;
+    margin-bottom: -1px;
+    transform: rotate(0);
+
+    @include atSmall {
+      background-size: auto 200px;
+      height: 200px;
+    }
+
+    @include atMedium {
+      background-size: auto 250px;
+      height: 250px;
+    }
+  }
+
+  &--waves {
+    background-image: url('/static/images/waves.jpg');
+  }
+
+  &--reversed {
+    transform: rotate(180deg);
+  }
+}

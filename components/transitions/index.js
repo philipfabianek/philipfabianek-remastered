@@ -1,9 +1,9 @@
+import ImageTransition from './ImageTransition';
 import Reveal from './Reveal';
 import RevealOnScroll from './RevealOnScroll';
-import SquareTransition from './SquareTransition';
 
 export {
+  ImageTransition,
   Reveal,
   RevealOnScroll,
-  SquareTransition,
 };

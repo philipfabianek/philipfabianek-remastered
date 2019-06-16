@@ -3,7 +3,7 @@ import {
   Page, Wrapper, PageSpace,
   Reveal, RevealOnScroll,
   Paragraph, Moto,
-  SquareTransition,
+  ImageTransition,
 } from '../components';
 
 const About = () => {
@@ -52,10 +52,10 @@ const About = () => {
         </Reveal>
       </Wrapper>
 
-      <SquareTransition />
+      <ImageTransition type="waves" reversed />
 
       <Wrapper light maxWidth={700}>
-        <PageSpace base={3} atSmall={1} atMedium={2} />
+        <PageSpace base={1} atSmall={1} atMedium={1} />
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
@@ -99,12 +99,10 @@ const About = () => {
           </Paragraph>
         </RevealOnScroll>
 
-        <PageSpace base={3} atSmall={1} atMedium={3} />
+        <PageSpace base={1} atSmall={1} atMedium={1} />
       </Wrapper>
 
-      <SquareTransition  reversed/>
-
-      <PageSpace base={2} />
+      <ImageTransition type="waves" />
     </Page>
   );
 };
