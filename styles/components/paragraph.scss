@@ -33,4 +33,13 @@
       letter-spacing: .5px;
     }
   }
+
+  &--inline {
+    display: inline-block;
+  }
+
+  &--text {
+    cursor: text;
+    user-select: text;
+  }
 }

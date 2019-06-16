@@ -2,7 +2,7 @@
 import {
   Page, Wrapper, PageSpace,
   Reveal, RevealOnScroll,
-  Paragraph, Moto,
+  Paragraph, Moto, List,
   ImageTransition,
 } from '../components';
 
@@ -17,34 +17,27 @@ const Contact = () => {
       className="contact-page"
     >
       <Wrapper maxWidth={700} fullHeight atTop>
-        <PageSpace base={1} atMedium={2} />
 
         <Reveal type='slide' delay={4000}>
-          <PageSpace base={1} atSmall={1} atMedium={1} />
+          <PageSpace />
 
           <Paragraph light>
-            Something in here
+            I'm working on this section too, but to give you some ways to contact me, you can make use of:
           </Paragraph>
+
+          <PageSpace />
+
+          <List light>
+            <li><b>Email:</b> <Paragraph light inline text>fabianekphilip@gmail.com</Paragraph></li>
+            <li><b>LinkedIn:</b> <Paragraph light inline text>https://www.linkedin.com/in/philip-fabianek</Paragraph></li>
+            <li><b>GitHub:</b> <Paragraph light inline text>https://github.com/philipfabianek</Paragraph></li>
+            <li><b>Facebook:</b> <Paragraph light inline text>https://www.facebook.com/philip.fabianek.5</Paragraph></li>
+            <li><b>Twitter:</b> <Paragraph light inline text>https://twitter.com/philip_fabianek</Paragraph></li>
+          </List>
 
           <PageSpace base={2} atSmall={2} atMedium={4} />
         </Reveal>
       </Wrapper>
-
-      <ImageTransition type="waves" reversed />
-
-      <Wrapper maxWidth={700} fullHeight light>
-        <PageSpace base={1} atSmall={1} atMedium={1} />
-
-        <RevealOnScroll type='slide' offset={300}>
-          <Paragraph>
-            Something in here
-          </Paragraph>
-        </RevealOnScroll>
-
-        <PageSpace base={1} atSmall={1} atMedium={1} />
-      </Wrapper>
-
-      <ImageTransition type="waves" />
     </Page>
   );
 };

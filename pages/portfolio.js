@@ -23,7 +23,7 @@ const Portfolio = () => {
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light>
-            Something in here
+            Coming soon
           </Paragraph>
 
           <PageSpace base={2} atSmall={2} atMedium={4} />
@@ -37,7 +37,7 @@ const Portfolio = () => {
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
-            Something in here
+            Coming soon
           </Paragraph>
         </RevealOnScroll>
 

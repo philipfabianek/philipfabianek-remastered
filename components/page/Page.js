@@ -63,15 +63,13 @@ const Page = props => {
           {children}
         </div>
 
-        <Reveal delay={4000}>
-          <div className="page__bottom-navigation">
-            {
-              BOTTOM_NAVIGATION_LINKS.map(({ href, text, linkTitle = '' }) => (
-                <Link href={href} key={href}><a title={linkTitle}>{text}</a></Link>
-              ))
-            }
-          </div>
-        </Reveal>
+        <div className="page__bottom-navigation">
+          {
+            BOTTOM_NAVIGATION_LINKS.map(({ href, text, linkTitle = '' }) => (
+              <Link href={href} key={href}><a title={linkTitle}>{text}</a></Link>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

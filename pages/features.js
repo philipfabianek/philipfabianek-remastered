@@ -22,7 +22,7 @@ const Features = () => {
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light>
-            Something in here
+            Coming soon (this section is going to describe my thinking process, code philosophy,&nbsp;...)
           </Paragraph>
 
           <PageSpace base={2} atSmall={2} atMedium={4} />
@@ -36,7 +36,7 @@ const Features = () => {
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
-            Something in here
+            Coming soon
           </Paragraph>
         </RevealOnScroll>
 
