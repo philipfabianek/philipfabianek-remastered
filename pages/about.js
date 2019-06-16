@@ -101,6 +101,10 @@ const About = () => {
 
         <PageSpace base={3} atSmall={1} atMedium={3} />
       </Wrapper>
+
+      <SquareTransition  reversed/>
+
+      <PageSpace base={2} />
     </Page>
   );
 };

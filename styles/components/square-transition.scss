@@ -2,9 +2,14 @@
   & {
     background-image: url('/static/images/square-transition-small.jpg');
     background-repeat: repeat-x;
-    background-size: auto 400px;
-    height: 400px;
+    background-size: auto 300px;
+    height: 300px;
     margin-bottom: -1px;
+
+    @include atSmall {
+      background-size: auto 400px;
+      height: 400px;
+    }
   }
 
   &--reversed {
