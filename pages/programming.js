@@ -5,15 +5,15 @@ import {
   Paragraph, ImageTransition,
 } from '../components';
 
-const Features = () => {
+const Programming = () => {
   return (
     <Page
-      title="Features"
+      title="Programming"
       headProps={{
-        title: "Features | Philip Fabianek - Web Developer",
-        description: "Learn more about the features of my projects.",
+        title: "Programming | Philip Fabianek - Web Developer",
+        description: "Learn more about my programming philosophy.",
       }}
-      className="features-page"
+      className="programming-page"
     >
       <Wrapper maxWidth={700} fullHeight atTop>
         <PageSpace base={1} atMedium={2} />
@@ -48,4 +48,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Programming;

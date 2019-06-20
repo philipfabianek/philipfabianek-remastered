@@ -21,7 +21,7 @@ const SELECTION_OPENED_CLASSNAME = 'landing-page__selection--opened';
 // Selection config
 const selectionOptions = [
   { text: "About me", href: "/about" },
-  { text: "Features", href: "/features" },
+  { text: "Programming", href: "/programming" },
   { text: "Portfolio", href: "/portfolio" },
   { text: "Contact", href: "/contact" },
 ];

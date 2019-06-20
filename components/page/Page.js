@@ -18,7 +18,7 @@ import '../../styles';
 const TRANSITION_TITLE_CN = 'page__title--transition';
 const BOTTOM_NAVIGATION_LINKS = [
   { href: '/about', text: 'ABOUT', linkTitle: 'Learn more about me and my life philosophy' },
-  { href: '/features', text: 'FEATURES', linkTitle: 'Explore the specific features of my projects, my practises and approach' },
+  { href: '/programming', text: 'PROGRAMMING', linkTitle: 'Explore the specific features of my projects, my practises and approach' },
   { href: '/portfolio', text: 'PORTFOLIO', linkTitle: 'Learn more about my past work and see some of the finished projects' },
   { href: '/contact', text: 'CONTACT', linkTitle: 'Contact me' },
 ];
