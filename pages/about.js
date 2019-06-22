@@ -30,19 +30,19 @@ const About = () => {
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light center>
-            My name is Philip, I am 16 (soon to be 17) years old and I am from Czechia. I currently live in Brno, which is the 2nd largest city in my country. I go to the high school but that is only a small part of my life.
+            My name is Philip, I&nbsp;am 16 (soon to be 17) years&nbsp;old and I&nbsp;am from Czechia. I&nbsp;currently live in&nbsp;Brno, which is the 2nd largest city in&nbsp;my&nbsp;country. I&nbsp;go to&nbsp;the&nbsp;high school but that is only a small part of&nbsp;my&nbsp;life.
           </Paragraph>
 
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light center>
-            When I'm at home, I always wonder what to do with my time. Even though I watch many movies and some TV shows, eventually time I always get bored and want to do something that feels productive.
+            When I'm at&nbsp;home, I&nbsp;always wonder what to do with my&nbsp;time. Even though I&nbsp;watch many movies and some TV shows, eventually time I&nbsp;always get bored and want to&nbsp;do something that feels productive.
           </Paragraph>
 
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light center>
-            Throughout the years, I've discovered there are 3 things that always feel good to do:
+            Throughout the years, I've&nbsp;discovered there are 3&nbsp;things that always feel good to&nbsp;do:
           </Paragraph>
 
           <PageSpace base={2.5} />
@@ -62,43 +62,43 @@ const About = () => {
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
-            If you do too much of one of them or don't do any relaxing activities between them, you always get burned out (physically or mentally).
+            If you do too much of one of them or don't do any relaxing activities between them, you always get burned&nbsp;out (physically or mentally).
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            Therefore <b>I learn, I work and I do sports</b> - I've tried many different sports and running ended up as the best match for me, but I'm planning to focus more on cycling and swimming.
+            Therefore <b>I&nbsp;learn, I work and I do sports</b> - I've&nbsp;tried many different sports and running ended up as&nbsp;the&nbsp;best match for&nbsp;me, but I'm&nbsp;planning to&nbsp;focus more on cycling and swimming.
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            In terms of my 'work', you can learn more about that in the portfolio section, but I've started working as a freelancer in the beginning of 2018 and have been employed for almost a year now. (part-time job since september 2018)
+            In terms of my&nbsp;'work', you can learn more about that in&nbsp;the&nbsp;portfolio section, but I've&nbsp;started working as&nbsp;a&nbsp;freelancer in the beginning of 2018 and have been employed for almost a year now. (part-time job since september&nbsp;2018)
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            Despite the fact that I do a reasonable amount of physical activities and I also work, I find the learning part most important to me, but suprisingly not because I go to school. We live in an age where you can actually learn almost anything from the comfort of your home. And I made a heavy use of that.
+            Despite the fact that I&nbsp;do a&nbsp;reasonable amount of physical activities and I&nbsp;also&nbsp;work, I&nbsp;find the&nbsp;learning part most important to&nbsp;me, but suprisingly not because I&nbsp;go to&nbsp;school. We&nbsp;live in&nbsp;an&nbsp;age where you&nbsp;can actually learn almost anything from&nbsp;the&nbsp;comfort of&nbsp;your&nbsp;home. And I&nbsp;made a&nbsp;heavy&nbsp;use of&nbsp;that.
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            I basically learned to code by myself. I've had some introduction to programming at school, but looking back it didn't make any difference. My huge advantage has been my logical thinking and that is also the reason why I love math.
+            I basically learned to code by myself. I've&nbsp;had some introduction to&nbsp;programming at&nbsp;school, but looking back it&nbsp;didn't make any difference. My huge advantage has been my logical thinking and that&nbsp;is also the reason why I&nbsp;love math.
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            Even though learning more about programming helps me at work a lot (and is sometimes necessary), I do it mostly for myself. Beside programming, which plays a huge part in my life right now, I am into a lot of things (fields). The things I've lately been interested in include physics, literature ('artistic' as well as 'educational'), films or music - I'm learning to play the piano by myself but I love many genres.
+            Even though learning more about programming helps me at&nbsp;work a&nbsp;lot (and is sometimes necessary), I&nbsp;do it mostly for myself. Beside programming, which plays a huge part in&nbsp;my&nbsp;life right now, I&nbsp;am into a&nbsp;lot&nbsp;of&nbsp;things (fields). The things I've&nbsp;lately been interested&nbsp;in include physics, literature ('artistic' as&nbsp;well as&nbsp;'educational'), films or&nbsp;music - I'm&nbsp;learning to&nbsp;play the&nbsp;piano by&nbsp;myself but I&nbsp;love many genres.
           </Paragraph>
 
           <PageSpace base={1} />
 
           <Paragraph>
-            I could write way more than that, but I hope that I gave you an acceptable overview of who I am. If you want to get to know me better or have something in mind, don't hesitate and contact me on any of the platforms from the <Link href="/contact">[Contact]</Link> section of this website. I am always looking forward to having a good chat or meeting a new person.
+            I&nbsp;could write way more than&nbsp;that, but I&nbsp;hope that I&nbsp;gave you an acceptable overview of who I&nbsp;am. If you&nbsp;want to&nbsp;get to&nbsp;know me better or have something in mind, don't hesitate and contact&nbsp;me on&nbsp;any of&nbsp;the&nbsp;platforms from&nbsp;the&nbsp;<Link href="/contact">[Contact]</Link> section of&nbsp;this&nbsp;website. I&nbsp;am always looking forward to&nbsp;having a&nbsp;good chat or meeting a&nbsp;new person.
           </Paragraph>
         </RevealOnScroll>
 
