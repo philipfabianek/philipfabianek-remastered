@@ -65,40 +65,40 @@ const About = () => {
             If you do too much of one of them or don't do any relaxing activities between them, you always get burned&nbsp;out (physically or mentally).
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
             Therefore <b>I&nbsp;learn, I work and I do sports</b> - I've&nbsp;tried many different sports and running ended up as&nbsp;the&nbsp;best match for&nbsp;me, but I'm&nbsp;planning to&nbsp;focus more on cycling and swimming.
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
             In terms of my&nbsp;'work', you can learn more about that in&nbsp;the&nbsp;portfolio section, but I've&nbsp;started working as&nbsp;a&nbsp;freelancer in the beginning of 2018 and have been employed for almost a year now. (part-time job since september&nbsp;2018)
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
             Despite the fact that I&nbsp;do a&nbsp;reasonable amount of physical activities and I&nbsp;also&nbsp;work, I&nbsp;find the&nbsp;learning part most important to&nbsp;me, but suprisingly not because I&nbsp;go to&nbsp;school. We&nbsp;live in&nbsp;an&nbsp;age where you&nbsp;can actually learn almost anything from&nbsp;the&nbsp;comfort of&nbsp;your&nbsp;home. And I&nbsp;made a&nbsp;heavy&nbsp;use of&nbsp;that.
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
             I basically learned to code by myself. I've&nbsp;had some introduction to&nbsp;programming at&nbsp;school, but looking back it&nbsp;didn't make any difference. My huge advantage has been my logical thinking and that&nbsp;is also the reason why I&nbsp;love math.
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
             Even though learning more about programming helps me at&nbsp;work a&nbsp;lot (and is sometimes necessary), I&nbsp;do it mostly for myself. Beside programming, which plays a huge part in&nbsp;my&nbsp;life right now, I&nbsp;am into a&nbsp;lot&nbsp;of&nbsp;things (fields). The things I've&nbsp;lately been interested&nbsp;in include physics, literature ('artistic' as&nbsp;well as&nbsp;'educational'), films or&nbsp;music - I'm&nbsp;learning to&nbsp;play the&nbsp;piano by&nbsp;myself but I&nbsp;love many genres.
           </Paragraph>
 
-          <PageSpace base={1} />
+          <PageSpace />
 
           <Paragraph>
-            I&nbsp;could write way more than&nbsp;that, but I&nbsp;hope that I&nbsp;gave you an acceptable overview of who I&nbsp;am. If you&nbsp;want to&nbsp;get to&nbsp;know me better or have something in mind, don't hesitate and contact&nbsp;me on&nbsp;any of&nbsp;the&nbsp;platforms from&nbsp;the&nbsp;<Link href="/contact">[Contact]</Link> section of&nbsp;this&nbsp;website. I&nbsp;am always looking forward to&nbsp;having a&nbsp;good chat or meeting a&nbsp;new person.
+            I&nbsp;could write way more than&nbsp;that, but I&nbsp;hope that I&nbsp;gave you an acceptable overview of who I&nbsp;am. If you&nbsp;want to&nbsp;get to&nbsp;know me better or have something in mind, don't hesitate and contact&nbsp;me on&nbsp;any of&nbsp;the&nbsp;platforms from&nbsp;the&nbsp;<Link href="/contact"><a>[Contact]</a></Link> section of&nbsp;this&nbsp;website. I&nbsp;am always looking forward to&nbsp;having a&nbsp;good chat or meeting a&nbsp;new person.
           </Paragraph>
         </RevealOnScroll>
 
