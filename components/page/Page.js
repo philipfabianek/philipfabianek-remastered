@@ -23,7 +23,11 @@ const BOTTOM_NAVIGATION_LINKS = [
   { href: '/contact', text: 'CONTACT', linkTitle: 'Contact me' },
 ];
 
+// Utils
+import removePreload from '../../utils/removePreload';
+
 const Page = props => {
+  removePreload();
   const [titleCN, setTitleCN] = useState('');
 
   useEffect(() => {
@@ -49,7 +53,7 @@ const Page = props => {
         description={headDescription}
       />
 
-      <div className={`page ${pageClassName}`}>
+      <div className={`preload page ${pageClassName}`}>
         <h1 className={`page__title ${titleCN}`}>{pageTitle}</h1>
 
         {/* {

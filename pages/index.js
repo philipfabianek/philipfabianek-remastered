@@ -5,13 +5,14 @@ import { useState } from 'react';
 import Link from 'next/link'
 
 // Head
-import { Head } from "../components";
+import { Head } from '../components';
 
 // utils
-import { isIEorEdge } from "../utils/detectBrowser";
+import { isIEorEdge } from '../utils/detectBrowser';
+import removePreload from '../utils/removePreload';
 
 // Styles
-import "../styles";
+import '../styles';
 
 // Constants
 const HOVERED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-hovered' : 'landing-page--button-hovered';
@@ -20,13 +21,15 @@ const SELECTION_OPENED_CLASSNAME = 'landing-page__selection--opened';
 
 // Selection config
 const selectionOptions = [
-  { text: "About me", href: "/about" },
-  { text: "Programming", href: "/programming" },
-  { text: "Portfolio", href: "/portfolio" },
-  { text: "Contact", href: "/contact" },
+  { text: 'About me', href: '/about' },
+  { text: 'Programming', href: '/programming' },
+  { text: 'Portfolio', href: '/portfolio' },
+  { text: 'Contact', href: '/contact' },
 ];
 
 export default () => {
+  removePreload();
+
   const onButtonMouseOver = () => {
     if (isButtonClicked) {
       return;
@@ -64,7 +67,7 @@ export default () => {
         description="Full-Stack Web Developer that produces high-end websites and applications that focus on simplicity and the best possible user experience."
       />
 
-      <div className={`landing-page ${landingPageClassName}`}>
+      <div className={`preload landing-page ${landingPageClassName}`}>
         <div className="landing-page__initial-content">
           <div className="landing-page__rectangle"></div>
 

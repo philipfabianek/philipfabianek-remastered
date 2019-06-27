@@ -15,7 +15,7 @@ Next.js (React) with a few libraries and some utils
 * Components inside `components`
 * Static files (images) inside `static`
 * Styles inside `styles`
-* Utils (always pure functions) inside `utils`
+* Utils (almost always pure functions) inside `utils`
 
 ### Structure remarks
 

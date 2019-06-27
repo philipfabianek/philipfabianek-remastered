@@ -18,7 +18,7 @@ const Reveal = ({ delay = 1500, type = 'default', children }) => {
       setTimeout(() => {
         let CNToSet = CONTAINER_REVEALED_CN;
         if (type === 'slide') {
-          CNToSet += (" " + CONTAINER_TRANSFORM_REVEALED_CN);
+          CNToSet += (' ' + CONTAINER_TRANSFORM_REVEALED_CN);
         }
 
         setContainerTransitionCN(CNToSet);

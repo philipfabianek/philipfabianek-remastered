@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // utils
-import { getSelectedLanguage } from "../../utils/getSelectedLanguage";
+import { getSelectedLanguage } from '../../utils/getSelectedLanguage';
 
 const POSSIBLE_LANGUAGES = ['CZ', 'ENG'];
 
@@ -14,7 +14,7 @@ const LanguageSwitch = props => {
 
   const [languageState, setLanguageState] = useState(getSelectedLanguage());
   const languageIndex = POSSIBLE_LANGUAGES.indexOf(languageState);
-  const coverPosition = !languageIndex ? "left" : "right";
+  const coverPosition = !languageIndex ? 'left' : 'right';
 
   const setSelectedLanguage = () => {
     if (process.browser) {
