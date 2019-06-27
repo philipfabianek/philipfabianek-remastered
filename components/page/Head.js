@@ -13,7 +13,7 @@ const HeadComponent = props => (
     <meta key="theme-color" name="theme-color" content="#ffffff" />
 
     <meta key="charset" charSet="UTF-8" />
-    <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta key="http-equiv" httpEquiv="X-UA-Compatible" content="IE=edge" />
 
     {/* Raleway */}<link href="//fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin,latin-ext" rel="stylesheet" />
