@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const HeadComponent = props => (
   <Head>
+    {/* Favicons */}
     <link key="apple-touch-icon" rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
     <link key="icon-32x32" rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
     <link key="icon-16x16" rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
@@ -12,10 +13,15 @@ const HeadComponent = props => (
     <meta key="msapplication-TileColor" name="msapplication-TileColor" content="#da532c" />
     <meta key="theme-color" name="theme-color" content="#ffffff" />
 
+    {/* Google Search console authentication */}
+    <meta name="google-site-verification" content="mRO-9rwNf53eA2EMTGuMJmGexD1SZr5rUSVOUigy014" />
+
+    {/* Basic things */}
     <meta key="charset" charSet="UTF-8" />
     <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta key="http-equiv" httpEquiv="X-UA-Compatible" content="IE=edge" />
 
+    {/* Fonts */}
     {/* Raleway */}<link href="//fonts.googleapis.com/css?family=Raleway:300,400,600&subset=latin,latin-ext" rel="stylesheet" />
     {/* Roboto */}<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,600&subset=latin,latin-ext" rel="stylesheet" />
     {/* Passion One */}<link href="//fonts.googleapis.com/css?family=Passion+One:400,700,900&subset=latin,latin-ext" rel="stylesheet" />
