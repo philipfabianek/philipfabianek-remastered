@@ -22,7 +22,7 @@ const Contact = () => {
           <PageSpace />
 
           <Paragraph light>
-            I'm working on this section too, but to give you some ways to contact me, you can make use of:
+            I'm planning to adjust this section, but to give you some ways to contact me, you can make use of:
           </Paragraph>
 
           <PageSpace />
