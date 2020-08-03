@@ -28,6 +28,11 @@ import removePreload from '../../utils/removePreload';
 
 const Page = props => {
   removePreload();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [titleCN, setTitleCN] = useState('');
 
   useEffect(() => {

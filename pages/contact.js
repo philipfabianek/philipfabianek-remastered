@@ -31,7 +31,7 @@ const Contact = () => {
             <li><b>Email:</b> <Paragraph light inline text>fabianekphilip@gmail.com</Paragraph></li>
             <li><b>LinkedIn:</b> <Paragraph light inline text>https://www.linkedin.com/in/philip-fabianek</Paragraph></li>
             <li><b>GitHub:</b> <Paragraph light inline text>https://github.com/philipfabianek</Paragraph></li>
-            <li><b>Facebook:</b> <Paragraph light inline text>https://www.facebook.com/philip.fabianek.5</Paragraph></li>
+            <li><b>Facebook:</b> <Paragraph light inline text>https://www.facebook.com/filip.fabianek.9</Paragraph></li>
             <li><b>Twitter:</b> <Paragraph light inline text>https://twitter.com/philip_fabianek</Paragraph></li>
           </List>
 

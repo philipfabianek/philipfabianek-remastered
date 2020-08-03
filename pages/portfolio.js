@@ -48,7 +48,7 @@ const Portfolio = () => {
           <PageSpace />
 
           <Paragraph light>
-            Since I started to work as a part-time React developer, my programming has improved significantly (and I sort of started to make a meaningful use of React for the first time) but there isn't anything for me to share here because all I have worked on are custom administration and data processing sites made for other companies. The style of those projects doesn't matter all that much and no one from public can even access them.
+            Since I started to work as a part-time React developer, my programming has improved significantly (and I sort of started to make a meaningful use of React for the first time). I have since then worked on many custom administration and data processing applications. The style of those projects doesn't matter all that much and no one from public can even access them.
           </Paragraph>
 
           <PageSpace />
@@ -63,11 +63,32 @@ const Portfolio = () => {
 
       <ImageTransition type="waves" reversed />
 
-      <Wrapper maxWidth={700} fullHeight light>
+      <Wrapper maxWidth={700} light>
         <PageSpace base={1} atSmall={1} atMedium={1} />
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
+            However, since April 2020, I've been working on the biggest project yet. It is called <b>Twiner</b> and it is available at <Link href="https://twiner.cz"><a target="_blank">https://twiner.cz</a></Link>. Although this project isn't part of my part-time job, which I still maintain, I've already spent a lot of time working on it. The project allows people to connect and share their life / work experiences. Users are lead to creating offers and eventually meeting each other.
+          </Paragraph>
+
+          <PageSpace />
+
+          <Paragraph>
+            My role on the project was to create a completely functional web UI as well as server allowing users to sign up, upload images, etc. The project is doing quite well and you can see all of the registered users at <Link href="https://twiner.cz/people"><a target="_blank">https://twiner.cz/people</a></Link>.
+          </Paragraph>
+
+          <PageSpace />
+
+          <Paragraph>
+            The frontend is written using React and React hooks. While I made use of many custom designs, I also made a good use of Ant Design. Everything runs under the Next.js framework which allows very simple and effective SSR configuration and data fetching. The backend is written in Python using the Django framework. Finally, the project is deployed on AWS. While the deployment was the most difficult aspect of the project for me, it was also the most satisfying one.
+          </Paragraph>
+
+          <PageSpace />
+
+          <Paragraph>
+            I am still working on this project as Lead Application Developer and believe it has incredible potential and can be very successfull quite soon.
+          </Paragraph>
+          {/* <Paragraph>
             There are 2 more projects that I basically created for myself. Those are <Link href="https://github.com/philipfabianek/django-react-boilerplate"><a target="_blank">[django-react-boilerplate]</a></Link> and <Link href="https://github.com/philipfabianek/philipfabianek-remastered"><a target="_blank">[philipfabianek-remastered]</a></Link> (this site). The first one is a simple Django application, that allows public users to sign up, confirm email and log in. After that they can browse posts created in Django admin, make them favorite or even comment on them.
           </Paragraph>
 
@@ -87,7 +108,7 @@ const Portfolio = () => {
 
           <Paragraph>
             All things considered I made use of serverless Next.js which makes atleast some sense this time around, I can make a good use of React without having to worry about SSR myself.
-          </Paragraph>
+          </Paragraph> */}
         </RevealOnScroll>
 
         <PageSpace base={1} atSmall={1} atMedium={1} />

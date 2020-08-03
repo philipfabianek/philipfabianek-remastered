@@ -30,7 +30,7 @@ const About = () => {
           <PageSpace base={1} atSmall={1} atMedium={1} />
 
           <Paragraph light center>
-            My name is Philip, I&nbsp;am 16 (soon to be 17) years&nbsp;old and I&nbsp;am from Czechia. I&nbsp;currently live in&nbsp;Brno, which is the 2nd largest city in&nbsp;my&nbsp;country. I&nbsp;go to&nbsp;the&nbsp;high school but that is only a small part of&nbsp;my&nbsp;life.
+            My name is Philip, I&nbsp;am 18 years&nbsp;old and I&nbsp;am from Czechia. I&nbsp;currently live in&nbsp;Brno, which is the 2nd largest city in&nbsp;my&nbsp;country. I&nbsp;go to&nbsp;the&nbsp;high school but that is only a small part of&nbsp;my&nbsp;life.
           </Paragraph>
 
           <PageSpace base={1} atSmall={1} atMedium={1} />

@@ -79,13 +79,13 @@ const Programming = () => {
 
         <RevealOnScroll type='slide' offset={300}>
           <Paragraph>
-            I started to code by learning HTML and CSS (not counting the few hours I had at school). I took a course that even included a little bit of javascript, so the path was clear. When I completed the course, it suggested me to learn some of the rising JavaScript frameworks. It suggested React, Angular and Vue.
+            I started to code by learning HTML and CSS (not counting the few hours I had at school). I took a course that even included a little bit of JavaScript, so the path was clear. When I completed the course, it suggested me to learn some of the rising JavaScript frameworks. It suggested React, Angular and Vue.
           </Paragraph>
 
           <PageSpace />
 
           <Paragraph>
-            I chose React and took another course. I got a little bit more into JavaScript and decided to learn a server language. Since I already 'somewhat' knew JavaScript (reflecting on that I really didn't know too much at all) I discovered Node. This was the first time I sort of struggled but I was able to develop a simple Node CRUD application, eventually even with authentication and more features. As a database I chose MongoDB because it was what most people creating Node tutorials were using.
+            I chose React and took another course. I got a little bit more into JavaScript and decided to learn a server language. Since I already 'somewhat' knew JavaScript (reflecting on that I really didn't know all that much at all) I discovered Node. This was the first time I sort of struggled but I was able to develop a simple Node CRUD application, eventually even with authentication and more features. As a database I chose MongoDB because it was what most people creating Node tutorials were using.
           </Paragraph>
 
           <PageSpace />
