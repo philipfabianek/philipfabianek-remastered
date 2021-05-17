@@ -11,9 +11,6 @@ import { Head } from '../components';
 import { isIEorEdge } from '../utils/detectBrowser';
 import removePreload from '../utils/removePreload';
 
-// Styles
-import '../styles';
-
 // Constants
 const HOVERED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-hovered' : 'landing-page--button-hovered';
 const CLICKED_CLASSNAME = isIEorEdge() ? 'landing-page--button-ie-clicked' : 'landing-page--button-clicked';
@@ -27,7 +24,7 @@ const selectionOptions = [
   { text: 'Contact', href: '/contact' },
 ];
 
-export default () => {
+const RootPage = () => {
   removePreload();
 
   const onButtonMouseOver = () => {
@@ -108,3 +105,5 @@ export default () => {
     </div>
   );
 };
+
+export default RootPage;

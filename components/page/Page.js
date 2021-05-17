@@ -11,9 +11,6 @@ import { Head, LanguageSwitch } from './';
 // Custom components
 import { Reveal } from '../transitions';
 
-// Styles
-import '../../styles';
-
 // Constants
 const TRANSITION_TITLE_CN = 'page__title--transition';
 const BOTTOM_NAVIGATION_LINKS = [

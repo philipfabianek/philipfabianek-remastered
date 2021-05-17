@@ -1,4 +1,4 @@
-export default () => {
+const removePreload = () => {
   if (global.document) {
     window.onload = () => {
       const preload = document.getElementsByClassName('preload')[0];
@@ -8,3 +8,5 @@ export default () => {
     };
   }
 };
+
+export default removePreload;
